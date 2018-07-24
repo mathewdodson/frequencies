@@ -1,0 +1,58 @@
+﻿@model URLReader.Models.ApplicationStatus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ApplicationStatus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExecutedTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExecutedTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Success)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Success)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HealthStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HSResponseTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HSResponseTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WebAppID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
